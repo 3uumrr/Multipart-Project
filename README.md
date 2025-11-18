@@ -190,7 +190,6 @@ src/
 │   ├── java/com/example/multipartTest/
 │   │   ├── config/          # Configuration classes
 │   │   ├── controller/      # REST controllers
-│   │   ├── dto/             # Data Transfer Objects
 │   │   ├── exceptions/      # Exception handling
 │   │   ├── mapper/          # MapStruct mappers
 │   │   ├── models/          # JPA entities
