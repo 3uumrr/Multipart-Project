@@ -95,10 +95,17 @@ public class ProductServiceImpl implements ProductService{
             log.info("Filtering by max price: {}", maxPrice);
             spec = spec.and(ProductSpecification.hasMaxPrice(maxPrice));        }
 
-        List<Product> results = productRepository.findAllWithImages(spec);
+        List<Product> results = productRepository.findAll(spec);
         log.info("Found {} products matching criteria", results.size());
 
         return results;
 
+    }
+
+    @Override
+    public void deleteProduct(Long id) {
+        Product product = getById(id);
+
+        productRepository.deleteById(id);
     }
 }

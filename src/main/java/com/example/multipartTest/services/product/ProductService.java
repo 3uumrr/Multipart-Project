@@ -13,4 +13,5 @@ public interface ProductService {
     Product addProduct(ProductRequest product, MultipartFile[] images);
 
     List<Product> findByCriteria(Map<String, String> searchCriteria);
+    void deleteProduct(Long id);
 }
